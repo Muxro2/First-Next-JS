@@ -87,6 +87,8 @@ export default function GalleryPage({ gallery }: Props) {
 							height={500}
 							layout="responsive"
 							style={{ borderRadius: '10px' }}
+							placeholder="blur"
+							blurDataURL={`https://res.cloudinary.com/dmkz7axbh/image/upload/c_fill,q_auto,f_auto,dpr_auto/${img.src}`}
 						/>
 					</div>
 				))}
