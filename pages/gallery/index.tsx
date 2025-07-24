@@ -8,6 +8,7 @@ type Gallery = {
 	slug: string;
 	title: string;
 	description: string;
+	cover: string;
 };
 
 type Props = {
