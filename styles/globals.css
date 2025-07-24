@@ -24,8 +24,34 @@ nav {
 }
 
 h1 {
+  text-align: center;
   padding: 0;
   margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card .thumbnail {
+  border-radius: 10px;
+}
+
+.card h2 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .images {
