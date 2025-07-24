@@ -35,9 +35,8 @@ export default function Gallery({images}: Props) {
 	  <h1>Gallery</h1>
 		<div className="images">
 			{images.map((img, i) => (
-		  <div>
+		  <div key={i}>
 				<Image
-					key={i}
 					src={img.src}
 					alt={img.alt}
 					width={150}
