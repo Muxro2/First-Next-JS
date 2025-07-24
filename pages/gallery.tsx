@@ -1,19 +1,19 @@
 import fs from 'fs';
 import path from 'path';
-import { getStaticProps } from 'next';
+import { GetStaticProps } from 'next';
 import Image from 'next/image';
 import Head from 'next/head';
 
 type ImageData = {
 	src: string;
-	alr: string;
+	alt: string;
 }
 
 type Props = {
 	images: ImageData[];
 }
 
-export const getStaticProps: getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
 	const filePath = path.join(process.cwd(), 'data', 'gallery.json');
   const jsonData = fs.readFileSync(filePath, 'utf-8');
   const images = JSON.parse(jsonData);
