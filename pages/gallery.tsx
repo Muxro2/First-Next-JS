@@ -1,30 +1,52 @@
+import fs from 'fs';
+import path from 'path';
+import { getStaticProps } from 'next';
 import Image from 'next/image';
+import Head from 'next/head';
 
-export default function Gallery() {
-	return <div>
+type ImageData = {
+	src: string;
+	alr: string;
+}
+
+type Props = {
+	images: ImageData[];
+}
+
+export const getStaticProps: getStaticProps = async () => {
+	const filePath = path.join(process.cwd(), 'data', 'gallery.json');
+  const jsonData = fs.readFileSync(filePath, 'utf-8');
+  const images = JSON.parse(jsonData);
+
+  return {
+		props: {
+     images,
+		}
+	}
+}
+
+export default function Gallery({images}: Props) {
+	return <>
+		<Head>
+			<title>Gallery</title>
+			<meta name="description" content="My gallery"/>
+			<link rel="icon" href="/favicon.ico"/>
+		</Head>
 	  <h1>Gallery</h1>
 		<div className="images">
-		<Image
-			src="/images/photo1.jpeg"
-			alt="My Cat"
-			width={350}
-			height={500}
-			style={{borderRadius: '10px'}}
-		/>
-		<Image
-				src="/images/photo2.jpeg"
-				alt="My Cat"
-				width={350}
-				height={500}
-				style={{borderRadius: '10px'}}
-		/>
-		<Image
-					src="/images/photo3.jpeg"
-					alt="My Cat"
-					width={350}
-					height={500}
+			{images.map((img, i) => (
+		  <div>
+				<Image
+					key={i}
+					src={img.src}
+					alt={img.alt}
+					width={150}
+					height={300}
+					layout='responsive'
 					style={{borderRadius: '10px'}}
-			/>
+				/>
+				</div>
+			))}
 		</div>
-	</div>
+	</>
 }

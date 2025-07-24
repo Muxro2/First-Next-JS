@@ -1,0 +1,9 @@
+[
+	{ "src": "/images/photo1.jpeg", "alt": "My Cat" },
+	{ "src": "/images/photo2.jpeg", "alt": "My Cat" },
+	{ "src": "/images/photo3.jpeg", "alt": "My Cat" },
+	{ "src": "/images/photo4.jpeg", "alt": "My Cat" },
+	{ "src": "/images/photo5.jpeg", "alt": "My Cat" },
+	{ "src": "/images/photo6.jpeg", "alt": "My Cat" },
+	{ "src": "/images/photo7.jpeg", "alt": "My Cat" }
+]
