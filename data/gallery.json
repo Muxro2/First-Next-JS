@@ -5,9 +5,10 @@
 		"description": "The first folder",
 		"cover": "/images/photo1.jpeg",
 		"images": [
-			{ "src": "/images/photo1.jpeg", "alt": "My Cat" },
-			{ "src": "/images/photo2.jpeg", "alt": "My Cat" },
-			{ "src": "/images/photo3.jpeg", "alt": "My Cat" }
+			{ "src": "IMG_1444_krgzjv.jpg", "alt": "My Cat" },
+			{ "src": "IMG_1446_aj24ag.jpg", "alt": "My Cat" },
+			{ "src": "IMG_1421_uryk8a.jpg", "alt": "My Cat" }
+			
 		]
 	},
 	{
@@ -16,9 +17,9 @@
 		"description": "The second folder",
 		"cover" : "/images/photo4.jpeg",
 		"images": [
-			{ "src": "/images/photo4.jpeg", "alt": "My Cat" },
-			{ "src": "/images/photo5.jpeg", "alt": "My Cat" }
-		]
+		  { "src": "IMG_1340_op8tal.jpg", "alt": "My Cat" },
+		  { "src": "IMG_1495_meqxup.jpg", "alt": "My Cat" }
+    ]
 	},
 	{
 		"slug": "folder3",
@@ -26,8 +27,8 @@
 		"description": "The third folder",
 		"cover" : "/images/photo6.jpeg",
 		"images": [
-		  { "src": "/images/photo6.jpeg", "alt": "My Cat" },
-		  { "src": "/images/photo7.jpeg", "alt": "My Cat" }
+		  { "src": "IMG_1505_gsv4t4.jpg", "alt": "My Cat" },
+		  { "src": "IMG_1554_utgk93.jpg", "alt": "My Cat" }
     ]
 	}
 ]

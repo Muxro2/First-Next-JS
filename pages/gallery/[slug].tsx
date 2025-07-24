@@ -81,7 +81,7 @@ export default function GalleryPage({ gallery }: Props) {
 				{gallery.images.map((img, i) => (
 					<div key={i} style={{ position: 'relative', width: '100%', maxWidth: 350 }}>
 						<Image
-							src={img.src}
+							src={`https://res.cloudinary.com/dmkz7axbh/image/upload/c_fill,q_auto,f_auto,dpr_auto/${img.src}`}
 							alt={img.alt}
 							width={350}
 							height={500}
