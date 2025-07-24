@@ -60,8 +60,18 @@ export default function GalleryPage({ gallery }: Props) {
 	return (
 		<>
 			<Head>
-				<title>{gallery.title}</title>
+			  <title>{gallery.title} | My Photography</title>
 				<meta name="description" content={gallery.description} />
+
+				{/* Open Graph for social sharing */}
+				<meta property="og:title" content={gallery.title} />
+				<meta property="og:description" content={gallery.description} />
+				<meta property="og:image" content={gallery.coverImage} />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content={`https://yourdomain.com/gallery/${gallery.slug}`} />
+
+				{/* Twitter Card (optional) */}
+				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 
 			<h1>{gallery.title}</h1>
