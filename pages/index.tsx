@@ -13,7 +13,7 @@ export default function Home() {
       height={300}
       layout='responsive'
       placeholder='blur'
-      blurDataURL='https://res.cloudinary.com/dmkz7axbh/image/upload/c_fill,e_blur:1000,q_1,w_10,f_webp/IMG_1444_krgzjv.jpg'
+      blurDataURL='https://res.cloudinary.com/dmkz7axbh/image/upload/e_blur:1000,q_1,f_webp/IMG_1444_krgzjv.jpg'
       />
         </div>
     </>
