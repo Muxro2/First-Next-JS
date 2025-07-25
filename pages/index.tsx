@@ -1,14 +1,17 @@
 import Image from 'next/image';
+import photo1 from '../public/images/photo1.jpeg';
 
 export default function Home() {
   return (
     <>
     <h1>Home Page</h1>
     <Image 
-      src='https://res.cloudinary.com/dmkz7axbh/image/upload/w_800,h_600,c_fill,q_auto,f_auto,dpr_auto/IMG_1554_utgk93.jpg'
+      src='https://res.cloudinary.com/dmkz7axbh/image/upload/IMG_1444_krgzjv.jpg'
       alt="cat"
-      width={150}
-      height={250}
+      width={200}
+      height={300}
+      placeholder='blur'
+      blurDataURL='https://res.cloudinary.com/dmkz7axbh/image/upload/e_blur:1000,q_1,w_10,f_webp/IMG_1444_krgzjv.jpg'
       />
     </>
   )

@@ -86,9 +86,10 @@ export default function GalleryPage({ gallery }: Props) {
 							width={350}
 							height={500}
 							layout="responsive"
+							sizes="(max-width: 500px) 100vw, 50vw"
 							style={{ borderRadius: '10px' }}
 							placeholder="blur"
-							blurDataURL={`https://res.cloudinary.com/dmkz7axbh/image/upload/c_fill,q_auto,f_auto,dpr_auto/${img.src}`}
+							blurDataURL={`https://res.cloudinary.com/dmkz7axbh/image/upload/e_blur:1000,q_1,w_10,f_webp/${img.src}`}
 						/>
 					</div>
 				))}
